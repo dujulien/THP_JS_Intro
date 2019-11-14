@@ -57,7 +57,11 @@ entrepreneurs.forEach(entrepreneur => {
 
 // 2.3.1.4. Trie les entrepreneurs par ordre alphabétique du nom de famille.
 console.log("")
+
 console.log("Voici la liste des entrepreneurs par ordre alphabétique du nom de famille :")
+
+console.log(entrepreneurs.sort(function(a,b){return ('' + a.last).localeCompare(b.last)}))
+
 
 
 
