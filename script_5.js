@@ -52,4 +52,39 @@ console.log(`Le livre avec l'id 873495 s'intitule : ${books.find(x => x.id === 8
 
 
 // Supprime le livre avec l'ID: 133712 ;
+console.log("")
+
+for(let i = 0; i < books.length; i++){
+	if (books[i].id === 133712) {
+		books.splice(i,1);
+	}
+}
+
+console.log("Voici l'array sans le livre avec l'id 133712 :");
+console.log(books)
+
+
 // Trie les livres par ordre alphabétique (sans celui avec l'ID 133712 car il est supprimé).
+console.log("")
+console.log("Voici l'array avec les livres triés par ordre alphabétique :")
+console.log(books.sort(function(a,b){return ('' + a.title).localeCompare(b.title)}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
